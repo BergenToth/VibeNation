@@ -14,12 +14,11 @@
   </head>
   <body>
     <header>
-      <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
         <div class="container justify-content-center">
-          <a class="navbar-brand" href="./VibeNation-Home-Page.html"
-            >Vibe Nation</a
-          >
+          <a class="navbar-brand" href="./VibeNation-Home-Page.html">
+            <img class="nav-logo" src="./Media/Cropped Logo.png" alt="" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,44 +47,76 @@
       </nav>
     </header>
 
-    <body>
+    <section id="advertising-bg-image">
       <div class="advertisers-page">
-      <div class="form-container">
-          <h2>Advertiser Form</h2>
+        <div class="form-container">
+          <h2>Your Vibe</h2>
           <form>
-              <div class="form-group">
-                  <label for="whoYouAre">Who You Are</label>
-                  <textarea id="whoYouAre" class="form-control" rows="3" placeholder="Tell us about yourself"></textarea>
-              </div>
-  
-              <div class="form-group">
-                  <label>Is this a:</label><br>
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="type" id="product" value="product">
-                      <label class="form-check-label" for="product">Product</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="type" id="service" value="service">
-                      <label class="form-check-label" for="service">Service</label>
-                  </div>
-              </div>
-  
-              <div class="form-group">
-                  <label for="whyBenefit">How Would You Benefit Advertising On Our Website?</label>
-                  <textarea id="whyBenefit" class="form-control" rows="3" placeholder="Explain how you will benefit"></textarea>
-              </div>
-  
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Enter your email">
-              </div>
+            <div class="form-group">
+              <label for="whoYouAre">Who you are</label>
+              <textarea
+                id="whoYouAre"
+                class="form-control"
+                rows="3"
+                placeholder="Tell us about yourself"
+              ></textarea>
+            </div>
 
-              <div class="form-group text-center">
-                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <div class="form-group">
+              <label>What's your vibe?</label><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="type"
+                  id="product"
+                  value="product"
+                />
+                <label class="form-check-label" for="product">Product</label>
               </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="type"
+                  id="service"
+                  value="service"
+                />
+                <label class="form-check-label" for="service">Service</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="whyBenefit"
+                >How would you benefit from advertising on our website?</label
+              >
+              <textarea
+                id="whyBenefit"
+                class="form-control"
+                rows="3"
+                placeholder="Explain how you will benefit"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary btn-block">
+                Submit
+              </button>
+            </div>
           </form>
+        </div>
       </div>
-    </div>
+    </section>
     <footer class="page-footer bg-primary text-white text-center py-3 mt-5">
       Copyright &copy; 2024 Vibe Nation
     </footer>

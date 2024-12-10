@@ -7,54 +7,52 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: black;
-}
-
-.contact {
-  background: linear-gradient(
-      to bottom,
-      rgba(27, 38, 52, 1) 0,
-      rgb(0, 0, 0) 100%
-    )
-    #303e75;
+  min-width: 450px;
 }
 
 h2 {
   text-align: center;
 }
 
-.main-title {
-  color: white;
-  padding: 20px;
+.banner {
+  background-image: url(../Media/Neon-background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
 }
 
-.lead {
-  color: white;
-  padding: 20px;
-  border-radius: 25px;
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 300px;
+}
+
+.nav-logo {
+  width: 50px;
 }
 
 .main-banner {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .shield {
-  background: linear-gradient(
-      to bottom,
-      rgba(27, 38, 52, 1) 0,
-      rgb(0, 0, 0) 100%
-    )
-    #303e75;
-  border-radius: 50px;
-  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px;
 }
 
 .info-p {
   text-align: center;
   border-radius: 25px;
   color: white;
+}
+
+#lineup-text {
+  margin: 0 50px 50px;
 }
 
 #information {
@@ -123,9 +121,22 @@ h2 {
   border-radius: 25px;
 }
 
+.festival-image {
+  width: 75%;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+
 .page-section {
   padding: 50px 0;
-  text-align: center;
   background-image: url(../Media/Rave-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -133,6 +144,17 @@ h2 {
   background-position: center;
   margin-bottom: 50px;
   border-radius: 25px;
+}
+
+.tips-section {
+  padding: 50px 0;
+  background-image: url(../Media/Stars\ Background\ .jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  min-height: 300px;
 }
 
 #tip-item {
@@ -160,10 +182,13 @@ h2 {
   width: 100%;
   max-width: 500px;
   padding: 20px;
-  border: 2px solid #ddd;
+  border: 2px;
   border-radius: 10px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to bottom,
+    rgb(235, 10, 14) 0,
+    rgb(26, 87, 201) 100%
+  );
 }
 .form-container h2 {
   text-align: center;
@@ -186,94 +211,99 @@ h2 {
 }
 
 .artist-images {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50px
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50px;
 }
 
 .genre-description {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .artist {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  #techno-section {
-    padding: 20px;
-    background: url('../Media/Techno-background-image.webp') no-repeat center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    border-radius: 20px;
-    color: white;
-  }
+.artist {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  #house-section {
-    padding: 20px;
-    background-image: url(../Media/House-Music-background.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    border-radius: 20px;
-    color: white;
-  }
+#techno-section {
+  padding: 20px;
+  background: url("../Media/Techno-background-image.webp") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 20px;
+  color: white;
+}
 
-  #dubstep-section {
-    padding: 20px;
-    background-image: url(../Media/Dubstep-background-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    border-radius: 20px;
-    color: white;
-  }
+#house-section {
+  padding: 20px;
+  background-image: url(../Media/House-Music-background.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 20px;
+  color: white;
+}
 
-  .container {
-    margin-top: 20px;
-  }
+#dubstep-section {
+  padding: 20px;
+  background-image: url(../Media/Dubstep-background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 20px;
+  color: white;
+}
 
-  .info-row {
-    display: flex;
-    justify-content: space-evenly;
-    align-items:end;
-    margin-bottom: 20px;
-    padding: 50px
-  }
+.container {
+  margin-top: 20px;
+}
 
-  .info-item {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   border-width: 1px;
-   border-style: solid;
-   height: 115px;
-   object-fit: cover;
-   border-radius: 15px;
-   margin: 20px;
-   background: linear-gradient(
-    to bottom,
-    rgb(249, 249, 250) 0,
-    rgb(248, 5, 5) 100%
-  )
-  #fcfdfe;
+.info-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  margin-bottom: 20px;
+  padding: 50px;
+}
 
-  }
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 20px;
+  background: linear-gradient(
+      to bottom,
+      rgb(249, 249, 250) 0,
+      rgb(248, 5, 5) 100%
+    )
+    #fcfdfe;
+}
+
+#advertising-bg-image {
+  background-image: url(../Media/Festival\ Image2.jpg);
+  background-size: cover;
+  background-position: center;
+}
