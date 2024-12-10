@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family: "Electrolize", sans-ser;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -10,8 +11,20 @@ body {
   min-width: 450px;
 }
 
+.electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}  
+
 h2 {
   text-align: center;
+}
+
+.hr {
+    background-color: aqua;
+    border: none;
+    height: 4px;
 }
 
 .banner {
@@ -21,12 +34,12 @@ h2 {
   padding: 150px;
 }
 
-.logo {
+#logo {
   display: flex;
   justify-content: center;
 }
 
-.logo-image {
+#logo-image {
   width: 300px;
 }
 
@@ -38,58 +51,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.shield {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 100px;
-}
-
-.info-p {
-  text-align: center;
-  border-radius: 25px;
-  color: white;
-}
-
-#lineup-text {
-  margin: 0 50px 50px;
-}
-
-#information {
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../Media/FestivalImage.jpeg);
-  height: 700px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-.column-item {
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid white;
-  border-radius: 25px;
-}
-
-.header {
-  color: white;
-  border: 2px solid white;
-  border-radius: 15px;
-}
-
-.heading-item {
-  padding: 0px;
-  margin: 0px;
-}
-
-.about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 400px;
 }
 
 .page-footer {
@@ -99,33 +61,12 @@ h2 {
   align-items: center;
 }
 
-.bg-image {
-  background-image: url(../Media/FestivalImage.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  height: 400px;
-}
-
-.gallery {
+#about-us {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.gallery-image {
-  width: 75%;
-  margin: 0 15px 30px 15px;
-  border-radius: 25px;
-}
-
-.festival-image {
-  width: 75%;
-  border-radius: 30px;
-  margin: 0 auto;
-  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .carousel {
@@ -133,6 +74,17 @@ h2 {
   margin-bottom: 50px;
   margin-bottom: 50px;
   padding: 25px;
+}
+
+#lineup-text {
+  margin: 0 50px 50px;
+}
+
+.festival-image {
+  width: 75%;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: block;
 }
 
 .page-section {
@@ -144,70 +96,6 @@ h2 {
   background-position: center;
   margin-bottom: 50px;
   border-radius: 25px;
-}
-
-.tips-section {
-  padding: 50px 0;
-  background-image: url(../Media/Stars\ Background\ .jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 25px;
-  margin-bottom: 25px;
-  min-height: 300px;
-}
-
-#tip-item {
-  text-wrap: nowrap;
-}
-
-#tips {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#form {
-  padding: 50px 0;
-  text-align: center;
-  background-color: #f5f5f5;
-  color: #333;
-  border-radius: 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  overflow: hidden;
-}
-.form-container {
-  width: 100%;
-  max-width: 500px;
-  padding: 20px;
-  border: 2px;
-  border-radius: 10px;
-  background: linear-gradient(
-    to bottom,
-    rgb(235, 10, 14) 0,
-    rgb(26, 87, 201) 100%
-  );
-}
-.form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.form-container .form-group {
-  margin-bottom: 15px;
-}
-
-.advertisers-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.genre-overview {
-  padding: 100px;
 }
 
 .artist-images {
@@ -272,38 +160,47 @@ h2 {
   color: white;
 }
 
-.container {
-  margin-top: 20px;
-}
-
-.info-row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: end;
-  margin-bottom: 20px;
-  padding: 50px;
-}
-
-.info-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-width: 1px;
-  border-style: solid;
-  height: 115px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin: 20px;
-  background: linear-gradient(
-      to bottom,
-      rgb(249, 249, 250) 0,
-      rgb(248, 5, 5) 100%
-    )
-    #fcfdfe;
-}
-
 #advertising-bg-image {
-  background-image: url(../Media/Festival\ Image2.jpg);
+  background-image: url(../Media/Festival-Image2.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#advertisers-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#text-area {
+    max-height: 100px;
+
+}
+
+#text-area-2 {
+  max-height: 150px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(235, 10, 14) 0,
+    rgb(26, 87, 201) 100%
+  );
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container .form-group {
+  margin-bottom: 15px;
 }
