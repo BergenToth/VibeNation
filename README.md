@@ -15,3 +15,8 @@ Technologies Used
 - Bootstrap: For responsive design and ensuring the website looks great on all devices.
 
 
+User Stories:
+
+1: As a user, I want to search for GIFs by entering a search term so that I can easily find GIFs that match my interests.
+2: As a user, I want to navigate through the GIF results using the offset buttons so that I can view more results without reloading the page.
+3: As a user, I want the page layout to adjust based on my device's screen size so that the website is usable on both desktop and mobile devices.
